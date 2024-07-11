@@ -7,8 +7,9 @@ def safe_divide(numerator, denominator):
         else:
             return f"The result of the division is {numerator/denominator}"
 
-num = input("enter the value: ")
+numerator = input("enter the value: ")
+denominator= input("enter the value: ")
 try:
-    number = float(num)
+    number = float(numerator), float(denominator)
 except ValueError as e:
     print("Error: Please enter numeric values only.")
