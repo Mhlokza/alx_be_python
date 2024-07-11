@@ -9,6 +9,6 @@ def safe_divide(numerator, denominator):
 
 num = input("enter the value: ")
 try:
-    number = int(num)
+    number = float(num)
 except ValueError as e:
     print("Error: Please enter numeric values only.")
