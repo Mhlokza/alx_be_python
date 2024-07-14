@@ -2,28 +2,17 @@ import unittest
 from simple_calculator import SimpleCalculator
 
 class TestCase(unittest.TestCase):
+    def __int__(self):
+        self.calc=SimpleCalculator()
     def test_addition(self):
-        result = SimpleCalculator().add(10,5)
-        self.assertEqual(self,result,15)
+        self.assertEqual(self.calc.add(10,5),15)
 
-    def test_subraction(self):
-        result = SimpleCalculator().subtract(10,5)
-        self.assertEqual(self,result,5)
+    def test_subtraction(self):
+        self.assertEqual(self.calc.subtract(10,5),5)
 
     def test_multiplication(self):
-        result = SimpleCalculator().multiply(10,5)
-        self.assertEqual(self,result,50)
+        self.assertEqual(self.calc.multiply(5,10),50)
 
-    def test_divesion(self):
-        result = SimpleCalculator().divide(10,5)
-        self.assertEqual(self,result,2)
-
-    def test_divesion_by_0(self):
-       try:
-        result = SimpleCalculator().divide(10,0)
-        self.assertEqual(self,result,None)
-       except ZeroDivisionError as e:
-           print(e)
-
-       finally:
-           print("you cannot divide by zero")
+    def test_division(self):
+        self.assertEqual(self.calc.divide(10,5),2)
+        self.assertEqual(self.calc.divide(10,0),None)
