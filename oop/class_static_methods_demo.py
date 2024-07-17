@@ -2,7 +2,8 @@ class Calculator:
     calculation_type = "Arithmetic Operations"
     @staticmethod
     def add(a, b):
-        return f"The sum is: {a+b}"
+        sum = a+b
+        return f"The sum is: {sum}"
 
     @classmethod
 
@@ -10,4 +11,5 @@ class Calculator:
         print(f"Calculation type: {Calculator.calculation_type}")
         cls.a =a
         cls.b = b
-        return f"The product is: {cls.a * cls.b}"
+        product = cls.a * cls.b
+        return f"The product is: {product}"
