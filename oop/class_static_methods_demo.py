@@ -8,3 +8,4 @@ class Calculator:
     def multiply(cls, a, b):
         print(f"Calculation type: {cls.calculation_type}")
         return f"The product is: {a * b}"
+        return a * b
