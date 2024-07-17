@@ -12,7 +12,7 @@ class Rectangle(Shape):
         area=length*width
         return f"The area of the Rectangle is: {area}"
 
-class Cycle(Shape):
+class Circle(Shape):
 
     def area(self,radius):
         area=math.pi *radius**radius
