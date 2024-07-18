@@ -15,5 +15,5 @@ class Rectangle(Shape):
 class Circle(Shape):
 
     def area(self,radius):
-        area=math.pi *radius**radius
+        area=math.pi *radius**2
         return f"The area of the Circle is: {area}"
